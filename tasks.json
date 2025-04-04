@@ -1,0 +1,10 @@
+{
+  "script": {
+    "next": "storyboard",
+    "required_data": ["prompt"]
+  },
+  "storyboard": {
+    "next": "design",
+    "required_data": ["script.txt"]
+  }
+}

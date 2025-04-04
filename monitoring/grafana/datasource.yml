@@ -1,0 +1,14 @@
+apiVersion: 1
+datasources:
+- name: Prometheus
+  type: prometheus
+  uid: prometheus-ds
+  access: proxy
+  url: [invalid url, do not cite]
+  jsonData:
+    httpMethod: POST
+    manageAlerts: true
+    prometheusType: Prometheus
+    prometheusVersion: 2.44.0
+    cacheLevel: High
+  editable: false

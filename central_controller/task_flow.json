@@ -1,0 +1,17 @@
+{
+  "scriptwriting": {"next": "quality_check", "validate_as": "script"},
+  "quality_check_script": {"next": "storyboarding", "validate_as": "script"},
+  "storyboarding": {"next": "quality_check", "validate_as": "storyboard"},
+  "quality_check_storyboard": {"next": "designing", "validate_as": "storyboard"},
+  "designing": {"next": "quality_check", "validate_as": "design"},
+  "quality_check_design": {"next": "animating", "validate_as": "design"},
+  "animating": {"next": "quality_check", "validate_as": "animation"},
+  "quality_check_animation": {"next": "soundmastering", "validate_as": "animation"},
+  "soundmastering": {"next": "quality_check", "validate_as": "audio"},
+  "quality_check_audio": {"next": "editing", "validate_as": "audio"},
+  "editing": {"next": "quality_check", "validate_as": "video"},
+  "quality_check_video": {"next": "polishing", "validate_as": "video"},
+  "polishing": {"next": "quality_check", "validate_as": "video"},
+  "quality_check_polished": {"next": "distributing", "validate_as": "video"},
+  "distributing": {"next": "complete"}
+}
